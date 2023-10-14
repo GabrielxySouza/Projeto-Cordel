@@ -9,6 +9,10 @@
     padding: 0px;
   }
 
+  html, body{
+    min-height: 100vh;
+  }
+
   header{
     background-color: black;
     text-align: center;
@@ -16,7 +20,8 @@
 
   header >h1{
     font-family:'Passion One', sans-serif;
-    font-size: 8vw;
+    font-variant: small-caps; /*Muda as letras para a forma maiúsculas, mas sem alterar o tamanho digitado (maius./minus.) Para transforma todo um conteúdo em maiúscula, use a tag = text-tranform:*/
+    font-size: 10vw;
     color: white;
     padding-top: 50px;
   }
@@ -24,8 +29,8 @@
   nav {
     background-color: black;
     text-align: center;
-    padding-bottom: 40px;
-    min-height: 7vh;
+    padding-bottom: 50px;
+    
   }
 
   nav > a{
@@ -39,13 +44,10 @@
     text-decoration: underline;
   }
 
-  section p{
-    line-height: 2em; 
-  }
-
   section > p{
     font-family: 'Sriracha', 'cursive';
     font-size: 3.5vw;
+    line-height: 2em; 
     
   }
 
@@ -69,6 +71,7 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 44px;
+   
   }
 
   section p.paragrafo-imagem{
