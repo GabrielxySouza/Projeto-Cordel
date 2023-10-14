@@ -52,10 +52,10 @@
   }
 
   section#img01{
-    position: relative;
-    height: 71vh;
+    position: relative;/*não necessário, causou erro de exibição*/
+    height: 71vh;/* '' '' '' ''*/
     background-image: url(imagens/background001.jpg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;/*não necessário*/
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
@@ -63,26 +63,25 @@
   }
 
   section#img02{
-    position: relative;
-    height: 71vh;
+    position: relative;/*não necessário, causou erro de exibição*/
+    height: 71vh; /* '' '' '' ''*/
     background-image: url(imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    background-repeat: no-repeat;/*não necessário*/
+    background-position: center bottom;
     background-size: cover;
     background-attachment: fixed;
     padding: 44px;
-   
+  
   }
 
   section p.paragrafo-imagem{
-    position: absolute;
-    left: 5%;
-    top: 10%;
+    position: absolute;/*não necessário, causou erro de exibição*/
+    left: 5%; /*" " " "*/
+    top: 10%;/*" " " "*/
     background-color: rgba(0, 0, 0, 0.493);
     text-shadow: 1px 1px 1px black;
     color: white;
     padding: 5px;
-
   }
 
   p.paragrafo-unico{
@@ -122,4 +121,4 @@
   footer a:hover{
     text-decoration: underline;
   }
-  
+ /*Observações: exagerei na qunatidade de detalhes e informações, fazendo o código ficar até mesmo mais confuso. Menos pode ser mais. Comparando os dois códigos (o outro está nos desafios), vi que nem todas as estilizações precisam ser aplicadas, apenas algumas já são o suficiente. Veja como maior exemplo onde este deu errado na parte de adaptação da tela dos parágrafos com fundos com efeito parallax. Não seriam necessário o atributos position: relative e absolute, assim como os left e top que vem depois, pois eram apenas parágrafos, não uma caixa/conteiner de conteúdo.*/
